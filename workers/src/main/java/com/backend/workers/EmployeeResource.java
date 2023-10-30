@@ -50,5 +50,6 @@ public class EmployeeResource {
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
+    //http://localhost:8080/employee/all
 
 }

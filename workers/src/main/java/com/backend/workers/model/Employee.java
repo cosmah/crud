@@ -4,15 +4,12 @@ package com.backend.workers.model;
 import jakarta.persistence.*;
 import java.io.Serializable;
 
-@Entity //allocates to a database
+@Entity
 public class Employee implements Serializable {
 
-
-    //serialisable turns java class to string
-    @Id //primary key
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    //defining data column
-    @Column(nullable = false,updatable = false)
+    @Column(nullable = false, updatable = false)
     private Long id;
     private String name;
     private String email;
@@ -21,6 +18,10 @@ public class Employee implements Serializable {
     private String imageUrl;
     @Column(nullable = false, updatable = false)
     private String employeeCode;
+
+    public Employee() {
+        // Default constructor
+    }
 
     public Employee(Long id, String name, String email, String jobTitle, String phone, String imageUrl, String employeeCode) {
         this.id = id;
@@ -31,6 +32,9 @@ public class Employee implements Serializable {
         this.imageUrl = imageUrl;
         this.employeeCode = employeeCode;
     }
+
+    // Getters and setters
+
 
     public Long getId() {
         return id;
@@ -89,8 +93,8 @@ public class Employee implements Serializable {
     }
 
     @Override
-    public String toString(){
-        return "Employee{"+
+    public String toString() {
+        return "Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +

@@ -1,0 +1,37 @@
+[
+    {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "jobTitle": "Software Engineer",
+        "phone": "555-123-4567",
+        "imageUrl": "https://example.com/johndoe.jpg"
+    },
+    {
+        "name": "Alice Smith",
+        "email": "alice.smith@example.com",
+        "jobTitle": "Product Manager",
+        "phone": "555-234-5678",
+        "imageUrl": "https://example.com/alicesmith.jpg"
+    },
+    {
+        "name": "Bob Johnson",
+        "email": "bob.johnson@example.com",
+        "jobTitle": "Data Scientist",
+        "phone": "555-345-6789",
+        "imageUrl": "https://example.com/bobjohnson.jpg"
+    },
+    {
+        "name": "Emily Davis",
+        "email": "emily.davis@example.com",
+        "jobTitle": "Marketing Specialist",
+        "phone": "555-456-7890",
+        "imageUrl": "https://example.com/emilydavis.jpg"
+    },
+    {
+        "name": "Michael Wilson",
+        "email": "michael.wilson@example.com",
+        "jobTitle": "Financial Analyst",
+        "phone": "555-567-8901",
+        "imageUrl": "https://example.com/michaelwilson.jpg"
+    }
+]
