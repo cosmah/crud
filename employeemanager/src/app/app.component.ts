@@ -28,4 +28,27 @@ export class AppComponent implements OnInit {
       }
     );
   }
+
+  //set modal
+  public onOpenModal(employee: Employee, mode:string): void{
+    //access container
+    const container = document.getElementById('main-container');
+
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.style.display = 'none';
+
+    button.setAttribute('data-toggle', 'modal');
+    if(mode === 'add'){
+      button.setAttribute('data-target', '#addEmployeeModel');
+    }
+    if(mode === 'edit'){
+      button.setAttribute('data-target', '#updateEmployeeModel');
+    }
+    if(mode === 'delete'){
+      button.setAttribute('data-target', '#deleteEmployeeModel');
+    }
+    container?.appendChild(button);
+    button.click();
+  }
 }
